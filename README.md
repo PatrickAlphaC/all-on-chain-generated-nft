@@ -6,6 +6,20 @@
 </p>
 <br/>
 
+- [All On Chain Generated NFT](#all-on-chain-generated-nft)
+    - [About SVGs](#about-svgs)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
+  - [Quickstart / Deploy](#quickstart--deploy)
+    - [SVGNFT Deployment](#svgnft-deployment)
+    - [Random SVG Deployment](#random-svg-deployment)
+- [Create NFT & View on OpenSea](#create-nft--view-on-opensea)
+  - [Important notes for SVGs](#important-notes-for-svgs)
+  - [Other Notes](#other-notes)
+  - [Test](#test)
+  - [Verify on Etherscan](#verify-on-etherscan)
+    - [Linting](#linting)
+
 # All On Chain Generated NFT
 
 This is a repo that shows 2 things:
@@ -83,7 +97,7 @@ yarn
 ```
 
 
-## Deploy
+## Quickstart / Deploy
 
 Deployment scripts are in the [deploy](https://github.com/smartcontractkit/hardhat-starter-kit/tree/main/deploy) directory. If required, edit the desired environment specific variables or constructor parameters in each script, then run the hardhat deployment plugin as follows. If no network is specified, it will default to the Kovan network.
 
