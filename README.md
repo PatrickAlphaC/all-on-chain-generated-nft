@@ -8,6 +8,13 @@
 
 # All On Chain Generated NFT
 
+This is a repo that shows 2 things:
+
+1. How to create NFTs with metadata that is 100% on-chain
+2. How we can generate random art on-chain using the SVG method
+
+Inspired by the [NFT Brownie Mix](https://github.com/PatrickAlphaC/nft-mix)
+
 - [All On Chain Generated NFT](#all-on-chain-generated-nft)
     - [About SVGs](#about-svgs)
   - [Requirements](#requirements)
@@ -21,13 +28,6 @@
   - [Test](#test)
   - [Verify on Etherscan](#verify-on-etherscan)
     - [Linting](#linting)
-
-This is a repo that shows 2 things:
-
-1. How to create NFTs with metadata that is 100% on-chain
-2. How we can generate random art on-chain using the SVG method
-
-Inspired by the [NFT Brownie Mix](https://github.com/PatrickAlphaC/nft-mix)
 
 ### About SVGs
 
