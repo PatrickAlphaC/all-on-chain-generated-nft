@@ -6,7 +6,7 @@
 </p>
 <br/>
 
-# All On Chain NFT
+# All On Chain Generated NFT
 
 This is a repo that shows 2 things:
 
