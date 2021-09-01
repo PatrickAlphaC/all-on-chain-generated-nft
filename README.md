@@ -6,6 +6,8 @@
 </p>
 <br/>
 
+# All On Chain Generated NFT
+
 - [All On Chain Generated NFT](#all-on-chain-generated-nft)
     - [About SVGs](#about-svgs)
   - [Requirements](#requirements)
@@ -19,8 +21,6 @@
   - [Test](#test)
   - [Verify on Etherscan](#verify-on-etherscan)
     - [Linting](#linting)
-
-# All On Chain Generated NFT
 
 This is a repo that shows 2 things:
 
