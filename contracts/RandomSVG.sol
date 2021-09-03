@@ -8,6 +8,7 @@ import "@chainlink/contracts/src/v0.8/VRFConsumerBase.sol";
 
 contract RandomSVG is ERC721URIStorage, VRFConsumerBase, Ownable {
     uint256 public tokenCounter;
+
     event CreatedRandomSVG(uint256 indexed tokenId, string tokenURI);
     event CreatedUnfinishedRandomSVG(uint256 indexed tokenId, uint256 randomNumber);
     event requestedRandomSVG(bytes32 indexed requestId, uint256 indexed tokenId); 
@@ -36,6 +37,10 @@ contract RandomSVG is ERC721URIStorage, VRFConsumerBase, Ownable {
         size = 500;
         pathCommands = ["M", "L"];
         colors = ["red", "blue", "green", "yellow", "black", "white"];
+    }
+
+    function withdraw() public payable onlyOwner {
+        payable(owner()).transfer(address(this).balance);
     }
 
     function create() public returns (bytes32 requestId) {
