@@ -63,7 +63,7 @@ contract RandomSVG is ERC721URIStorage, VRFConsumerBase, Ownable {
         uint256 tokenId = requestIdToTokenId[requestId];
         _safeMint(nftOwner, tokenId);
         tokenIdToRandomNumber[tokenId] = randomNumber;
-        emit CreatedUnfinishedRandomSVG(tokenCounter, randomNumber);
+        emit CreatedUnfinishedRandomSVG(tokenId, randomNumber);
     }
 
     function generateSVG(uint256 _randomness) public view returns (string memory finalSvg) {

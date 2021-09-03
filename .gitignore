@@ -1,6 +1,9 @@
+.video.md
+.article.md
 artifacts
 cache
 deployments
 node_modules
 .DS_Store
 yarn.lock
+.article.md
