@@ -48,7 +48,7 @@ contract RandomSVG is ERC721URIStorage, VRFConsumerBase, Ownable {
     }
 
     function finishMint(uint256 tokenId) public {
-        require(bytes(tokenURI(tokenId)).length >= 0, "tokenURI is already set!"); 
+        require(bytes(tokenURI(tokenId)).length <= 0, "tokenURI is already set!"); 
         require(tokenCounter > tokenId, "TokenId has not been minted yet!");
         require(tokenIdToRandomNumber[tokenId] > 0, "Need to wait for the Chainlink node to respond!");
         uint256 randomNumber = tokenIdToRandomNumber[tokenId];
