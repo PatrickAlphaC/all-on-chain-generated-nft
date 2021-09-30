@@ -81,8 +81,8 @@ You can also use a `PRIVATE_KEY` instead of a `MNEMONIC` environment variable by
 Then you can install all the dependencies
 
 ```bash
-git clone https://github.com/patrickalphac/all-on-chain-nft
-cd all-on-chain-nft
+git clone https://github.com/patrickalphac/all-on-chain-generated-nft
+cd all-on-chain-generated-nft
 ```
 then
 
