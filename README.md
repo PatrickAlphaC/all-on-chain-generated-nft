@@ -31,7 +31,7 @@ Inspired by the [NFT Brownie Mix](https://github.com/PatrickAlphaC/nft-mix)
 
 ### About SVGs
 
-[SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Introduction) means "Scalar Vector Graphics", and is an XML language and can be used to create an image either by specifying all the lines and shapes necessary, by modifying already existing raster images, or by a combination of both.
+[SVG](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Introduction) means "Scalable Vector Graphics", and is an XML language and can be used to create an image either by specifying all the lines and shapes necessary, by modifying already existing raster images, or by a combination of both.
 
 We can then [base64 encode](https://stackoverflow.com/questions/201479/what-is-base-64-encoding-used-for) this SVG string into a URL that we can set as the `imageURI` in our NFT `tokenURI`. [Like this triangle](data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nNTAwJyBoZWlnaHQ9JzUwMCcgdmlld0JveD0nMCAwIDI4NSAzNTAnIGZpbGw9J25vbmUnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHBhdGggZmlsbD0nYmxhY2snIGQ9J00xNTAsMCxMNzUsMjAwLEwyMjUsMjAwLFonPjwvcGF0aD48L3N2Zz4=)
 
