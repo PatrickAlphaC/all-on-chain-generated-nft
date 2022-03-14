@@ -80,7 +80,7 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
         tx = await randomSVG.create({ gasLimit: 300000 });
         let receipt = await tx.wait(1);
         tokenId = receipt.events[3].topics[2];
-        log(`You've made your NFT! This is number ${tokenId}`);
+        log(`You've made your NFT! This is number ${tokenId.toString()}`);
         log("Let's wait for the Chainlink VRF node to respond...");
         await result;
     } else {
@@ -99,10 +99,10 @@ module.exports = async ({ getNamedAccounts, deployments, getChainId }) => {
             randomSVG.address
         );
         await transactionResponse.wait(1);
+        log(`Now let's finsih the mint...`);
+        tx = await randomSVG.finishMint(tokenId, { gasLimit: 2000000 });
+        await tx.wait(1);
     }
-    log(`Now let's finsih the mint...`);
-    tx = await randomSVG.finishMint(tokenId, { gasLimit: 2000000 });
-    await tx.wait(1);
     log(`You can view the tokenURI here ${await randomSVG.tokenURI(0)}`);
 };
 
